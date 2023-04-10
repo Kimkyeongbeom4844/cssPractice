@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS를 연습해봅시다</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div id="wrap">
@@ -21,7 +22,17 @@
       <div class="box box10">box10</div>
       <div class="box box11">box11</div>
       <div class="box box12">box12</div>
-      <!-- <p class="text">hello</p> -->
+      <p class="text">hello</p>
     </div>
+    <dialog class="dialog">
+      <h2>다이얼로그</h2>
+      <h2>내용</h2>
+      <form method="dialog">
+        <button type="submit" value="cancel">닫기</button>
+        <button type="submit" value="confirm">확인</button>
+      </form>
+    </dialog>
+    <button type="button" class="showDialogButton">최신모달</button>
+    <script src="./script/app.js"></script>
   </body>
 </html>
