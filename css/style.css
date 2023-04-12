@@ -25,5 +25,10 @@
   background: rgba(99, 71, 71, 0.5);
 }
 .canvasRef {
+  display: flex;
   border: 1px solid black;
+}
+.canvasModeList {
+  display: flex;
+  gap: 5px;
 }
