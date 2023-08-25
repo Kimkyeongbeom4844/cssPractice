@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이미지 리사이징</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <style>
+      .captureBox {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background: transparent;
+        top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="position: relative; background-color: red">
+      <div class="captureBox"></div>
+      <img src="./img/2017me.jpg" width="500" />
+    </div>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script>
+      const $captureBox = document.querySelector(".captureBox");
+      html2canvas($captureBox).then((canvas) => {
+        document.body.appendChild(canvas);
+      });
+    </script>
+  </body>
+</html>
